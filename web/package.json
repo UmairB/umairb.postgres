@@ -30,9 +30,11 @@
   },
   "devDependencies": {
     "@types/gulp": "^3.8.32",
+    "@types/gulp-sass": "0.0.29",
     "@types/node": "^6.0.57",
     "@types/systemjs": "^0.19.33",
     "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0",
     "gulpclass": "^0.1.1",
     "typescript": "^2.1.4"
   }

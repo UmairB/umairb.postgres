@@ -1,15 +1,19 @@
 import { Gulpclass, Task } from "gulpclass/Decorators";
 import * as path from "path";
 import * as gulp from "gulp";
+import * as sass from "gulp-sass";
 
 let paths = {
 	webroot: "./wwwroot/",
 	npm: "./node_modules/",
 	gulp: path.join(__dirname, "gulp/"),
-	lib: null
+	get lib() {
+		return `${this.webroot}lib/`;
+	},
+	get sass() {
+		return `${this.webroot}**/*.scss`;
+	}
 };
-
-paths.lib = `${paths.webroot}lib/`;
 
 const libs = {
 	'core-js': {
@@ -84,4 +88,14 @@ export class GulpClass {
 			}
 		}
     }
+
+	@Task("build:sass")
+	public buildSass() {
+		return gulp.src(paths.sass)
+			//.pipe(sourcemaps.init())
+			.pipe(sass().on('error', sass.logError))
+			//.pipe(cssmin())
+			//.pipe(sourcemaps.write('.', { includeContent: false, sourceRoot: '/app' }))
+			.pipe(gulp.dest(function (file) { return file.base; }));
+	}
 }
