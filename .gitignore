@@ -1,0 +1,10 @@
+.sass-cache/
+node_modules/
+bower_components/
+**/wwwroot/lib/
+**/npm-debug.log
+**/*.js
+!**/gulpfile.js
+**/*.js.map
+**/*.css
+**/*.css.map

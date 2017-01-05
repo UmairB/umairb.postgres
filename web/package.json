@@ -1,0 +1,39 @@
+{
+  "name": "umairb.postgreside",
+  "version": "1.0.0",
+  "description": "web ide for postgres",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "umair butt",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/forms": "^2.4.1",
+    "@angular/http": "^2.4.1",
+    "@angular/platform-browser": "^2.4.1",
+    "@angular/platform-browser-dynamic": "^2.4.1",
+    "@angular/router": "^3.4.1",
+    "core-js": "^2.4.1",
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0",
+    "inversify": "^3.0.0-rc.4",
+    "open": "0.0.5",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.2",
+    "systemjs": "^0.19.41",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/gulp": "^3.8.32",
+    "@types/node": "^6.0.57",
+    "@types/systemjs": "^0.19.33",
+    "gulp": "^3.9.1",
+    "gulpclass": "^0.1.1",
+    "typescript": "^2.1.4"
+  }
+}
